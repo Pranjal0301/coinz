@@ -5,6 +5,7 @@
 }
 body{
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #151515;
 }
 
 input[type = "text"]{
@@ -75,11 +76,13 @@ img{
 }
 
 .home-search{
+    color: #ccc;
     padding: 40px;
     text-align: center;
 
 
  h2{
+    color: #ccc;
     font-size: 32px;
     margin-bottom: 20px;
  }
@@ -106,6 +109,7 @@ img{
     
 
     .svg-load{
+        color: #111;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -115,6 +119,7 @@ img{
         transition: 0s opacity;
     }
     .svg-icon{
+        color: #111;
         position: absolute;
         top: 35%;
         right: 16px;
@@ -131,6 +136,7 @@ img{
 .home-cryptos{
     padding-bottom: 60px;
     h2{
+        color: #ccc;
         font-size: 26px;
         margin-bottom: 20px;
         text-align: center;
@@ -159,11 +165,11 @@ img{
 .home-crypto-name{
     flex:1;
     font-size: 20px;
-    color: #111;
+    color: #ccc;
     font-weight: 600;
 }
 .home-crypto-btc{
-    color: #111;
+    color: #ccc;
     font-size: 16px;
 
     img{
@@ -184,6 +190,7 @@ img{
     margin-left: 10%;
 }
 .show-header{
+color: #ddd;
 padding: 40px;
 text-align: center;
 
@@ -235,6 +242,7 @@ h2{
 /* Add this to your existing CSS or create a new stylesheet */
 
 .show-details {
+    
     margin-top: 20px;
   }
   
@@ -264,7 +272,11 @@ h2{
   }
 
 .details-title{
+    color: #ddd;
     padding:15px 0;
+}
+.disc-info{
+    color: #ddd;
 }
 
 .red-text {
@@ -276,6 +288,7 @@ h2{
   }
 
 .hero-title{
+    color: #ccc;
     text-align: center;
     margin-top: 80px;
     font-size: 35px;
@@ -325,6 +338,7 @@ h2{
 
 
 .container-footer {
+    
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -366,7 +380,7 @@ h2{
 
 
 footer {
-    background: #ddd;
+    background: #151515;
     display: table;
     width: 100vw;
     height: 8rem;
@@ -382,14 +396,14 @@ footer {
   }
   
   footer small {
-    color: #111;
+    color: #ccc;
     letter-spacing: .025rem;
     margin-bottom: 1.5rem;
     display: block;
   }
   
   .footer-nav a {
-    color: #111;
+    color: #ccc;
     text-decoration: none;
     margin: 0 .5rem;
     display: inline-block;
@@ -449,11 +463,11 @@ footer {
     .home-crypto-name{
         flex:1;
         font-size: 10px;
-        color: #111;
+        color: #ccc;
         font-weight: 600;
     }
     .home-crypto-btc{
-        color: #111;
+        color: #ccc;
         font-size: 10px;
     
         img{

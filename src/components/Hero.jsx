@@ -13,7 +13,7 @@ function Hero() {
 
     const fetchData = async()=>{
       try{
-      const response = await axios.get('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=4&page=1&sparkline=false&locale=en')
+      const response = await axios.get('https://cors-anywhere.herokuapp.com/https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=4&page=1&sparkline=false&locale=en')
     const finalData = response.data    
     setHerodata(finalData)
     
@@ -60,7 +60,7 @@ function Hero() {
         )}
 
         <div class="container-footer">
-            <svg class="arrow-circle-down bounce" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" width="48"><path d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z"/></svg>
+            <svg class="arrow-circle-down bounce" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" width="48"><path fill='currentColor' d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z"/></svg>
         </div>
         </div>
     </section>
