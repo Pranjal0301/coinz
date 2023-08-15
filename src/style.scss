@@ -1,0 +1,486 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+input[type = "text"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    display: block;
+    width: 100%;
+    border-radius:0 ;
+}
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+.width{
+    max-width: 720px;
+    margin: 0 auto;
+    width: 93%;
+}
+.header{
+    background: #111;
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+ h1{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+ }
+  a{
+    color: white;
+ }
+
+ .width{
+    position: relative;
+ }
+
+ svg{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -20px;
+ }
+ .svg-load{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -20px;
+ }
+ .svg-icon{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -20px;
+ }
+}
+
+.home-search{
+    padding: 40px;
+    text-align: center;
+
+
+ h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+ }
+ input{
+    border: 1px solid #ddd;
+    padding: 0 24px;
+    line-height: 54px;
+    border-radius: 8px;
+ }
+}
+
+@keyframes rotating {
+    from {
+      transform:translateY(-50%) rotate(0deg);
+    }
+    to {
+      
+      transform:translateY(-50%) rotate(360deg);
+    }
+  }
+.home-search-input{
+    position: relative;
+
+    
+
+    .svg-load{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 16px;
+        animation: 2s rotating infinite linear;
+        opacity: 0;
+        transition: 0s opacity;
+    }
+    .svg-icon{
+        position: absolute;
+        top: 35%;
+        right: 16px;
+        opacity: 1;
+        transition: 0s opacity;
+    }
+    &.searching .svg-load{
+        opacity: 1;
+    }
+    &.searching .svg-icon{
+        opacity: 0;
+    }
+}
+.home-cryptos{
+    padding-bottom: 60px;
+    h2{
+        font-size: 26px;
+        margin-bottom: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+     }
+}
+.home-cryptos-list{
+    border-top: 1px solid #ddd;
+}
+.home-crypto{
+    a{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    }
+    span{
+        display: block;
+    }
+}
+
+.home-crypto-image{
+    width: 50px;
+}
+.home-crypto-name{
+    flex:1;
+    font-size: 20px;
+    color: #111;
+    font-weight: 600;
+}
+.home-crypto-btc{
+    color: #111;
+    font-size: 16px;
+
+    img{
+        width: 16px;
+        display: inline-block;
+        margin: -3px 5px 0 0;
+        vertical-align: middle;
+    }
+}
+.home-crypto-usd{
+    color: #666;
+    font-size: 10px;
+}
+
+.git-lnk{
+    position: relative;
+    margin-bottom: 5px;
+    margin-left: 10%;
+}
+.show-header{
+padding: 40px;
+text-align: center;
+
+img{
+    width: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+h2{
+    font-size: 32px;
+    margin-top: 10px;
+}
+}
+
+.show-graph{
+    height: 200px;
+    width: 100%;
+
+}
+/*
+.show-details{ 
+    padding-top: 40px;
+    padding-bottom: 60px;
+
+    h2{
+        font-size: 26px;
+        margin-bottom: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+.show-details-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    color: #111;
+
+    h3{
+        font-size: 16px;
+        color: #111;
+    }
+}
+*/
+
+/* Add this to your existing CSS or create a new stylesheet */
+
+.show-details {
+    margin-top: 20px;
+  }
+  
+  .details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .show-details-row {
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+  }
+  
+  .show-details-row h4 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .show-details-row span {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+.details-title{
+    padding:15px 0;
+}
+
+.red-text {
+    color: red !important;
+  }
+  
+  .green-text {
+    color: rgb(14, 203, 129) !important;
+  }
+
+.hero-title{
+    text-align: center;
+    margin-top: 130px;
+    font-size: 35px;
+}
+.coin-slider{
+    margin-top: 50px;
+    display: flex;
+    /* width: 527px; */
+    align-content: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.slider-coin{
+    width: 200px;
+    height: 200px;
+}
+.slider-coin-img{
+    margin-left: 50px;
+    width: 50%;
+}
+.slider-coin__name{
+    display: flex;
+    justify-content: center;
+}
+.slider-coin__price{
+    display: flex;
+    justify-content: center;
+}
+
+.hero-coins{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 125px;
+    margin-bottom: 0px;
+    gap: 20px;
+}
+.hero_coin_img{
+    width: 120px;
+    height: 120px;
+}
+.hero_coin_name{
+    font-size: 15px;
+    text-transform: uppercase;
+
+}
+
+
+.container-footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto auto -5rem auto;
+}
+
+.arrow-circle-down {
+	display: block;
+	width: 40px;
+	height: 40px;
+	margin: 85px 0;
+	/*fill: #fff;*/
+}
+
+.bounce {
+	-webkit-animation: bounce 2s;
+	        animation: bounce 2s;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bounce {
+	
+	40% {
+		-webkit-transform: translateY(-20px);
+		        transform: translateY(-20px);
+	}
+
+}
+
+@keyframes bounce {
+	
+	40% {
+		-webkit-transform: translateY(-20px);
+		        transform: translateY(-20px);
+	}
+	
+}
+
+
+footer {
+    background: #ddd;
+    display: table;
+    width: 100vw;
+    height: 8rem;
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Arial', sans-serif;
+    font-size: .875rem;
+  }
+  
+  .wrapper {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  footer small {
+    color: #111;
+    letter-spacing: .025rem;
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+  
+  .footer-nav a {
+    color: #111;
+    text-decoration: none;
+    margin: 0 .5rem;
+    display: inline-block;
+  }
+  
+  .footer-nav a:hover {
+    color: #666;
+    transition: color .15s ease-in-out;
+  }
+  
+
+
+@media only screen and (max-width: 600px) {
+    .show-details-row h4 {
+        margin: 0;
+        font-size: 10px;
+      }
+      
+      .show-details-row span {
+        font-size: 10px;
+        font-weight: bold;
+      }
+      .width{
+        max-width: 320px;
+        margin: 0 auto;
+        width: 93%;
+    }
+
+    .home-cryptos{
+        padding-bottom: 60px;
+        h2{
+            font-size: 20px;
+            margin-bottom: 15px;
+            text-align: center;
+            margin-bottom: 15px;
+         }
+    }
+    .home-cryptos-list{
+        border-top: 1px solid #ddd;
+    }
+    .home-crypto{
+        a{
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        padding: 20px 0;
+        border-bottom: 1px solid #ddd;
+        }
+        span{
+            display: block;
+        }
+    }
+    
+    .home-crypto-image{
+        width: 25px;
+    }
+    .home-crypto-name{
+        flex:1;
+        font-size: 10px;
+        color: #111;
+        font-weight: 600;
+    }
+    .home-crypto-btc{
+        color: #111;
+        font-size: 10px;
+    
+        img{
+            width: 10px;
+            display: inline-block;
+            margin: -3px 5px 0 0;
+            vertical-align: middle;
+        }
+    }
+    .home-crypto-usd{
+        color: #666;
+        font-size: 8px;
+    }
+    .home-crypto-price-change{
+        font-size: 12px;
+    }
+    
+.hero-title{
+    text-align: center;
+    margin-top: 80px;
+    font-size: 25px;
+}
+
+.hero_coin_img{
+    width: 80px;
+    height: 80px;
+}
+  }
+
+

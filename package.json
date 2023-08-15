@@ -6,10 +6,16 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.4.0",
+    "classnames": "^2.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.14.2",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "recharts": "^2.7.3",
+    "sass": "^1.65.1",
+    "web-vitals": "^2.1.4",
+    "zustand": "^4.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -35,4 +41,5 @@
       "last 1 safari version"
     ]
   }
+  
 }
