@@ -15,7 +15,9 @@
     "recharts": "^2.7.3",
     "sass": "^1.65.1",
     "web-vitals": "^2.1.4",
-    "zustand": "^4.4.1"
+    "zustand": "^4.4.1",
+    "proxy": "http://localhost:3000"
+    
   },
   "scripts": {
     "start": "react-scripts start",
@@ -44,4 +46,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
+  
+    
+  
 }

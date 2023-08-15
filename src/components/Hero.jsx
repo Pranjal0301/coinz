@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 function Hero() {
 
   const [herodata, setHerodata] = useState(null)
+ 
+
   useEffect( ()=>{
 
     const fetchData = async()=>{
@@ -24,7 +26,6 @@ function Hero() {
     
   },[])
 
-  console.log(herodata)
     return (
     <>
     <section>

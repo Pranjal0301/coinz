@@ -4,16 +4,18 @@ import axios from 'axios'; // Import axios for making API calls
 
 export default function ListItems({ coin }) {
   const [priceChange24h, setPriceChange24h] = useState(null);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     // Fetch 24-hour price change data
     const fetchPriceChange24h = async () => {
       try {
-        const response = await axios.get(`https://api.coingecko.com/api/v3/coins/${coin.id}`);
+        const response = await axios.get(`https://cors-anywhere.herokuapp.com/https://api.coingecko.com/api/v3/coins/${coin.id}`);
         const priceChangeData = response.data.market_data.price_change_percentage_24h;
         setPriceChange24h(priceChangeData);
       } catch (error) {
         console.error('Error fetching price change data:', error);
+        setError(error);
       }
     };
 
