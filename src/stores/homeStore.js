@@ -20,7 +20,7 @@ const homeStore = create((set) => ({
     if(query.length > 2){
 
     
-    const res = await axios.get(`https://api.coingecko.com/api/v3/search?query=${query}`)
+    const res = await axios.get(`https://thingproxy.freeboard.io/fetch/https://api.coingecko.com/api/v3/search?query=${query}`)
     const coins = res.data.coins.map(coin =>{
         return {
             name : coin.name,
@@ -36,7 +36,7 @@ const homeStore = create((set) => ({
   },300),
 
   fetchCoins: async() => {
-    const [res, btcRes] = await Promise.all([axios.get('https://api.coingecko.com/api/v3/search/trending'),axios.get(`https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd`)])
+    const [res, btcRes] = await Promise.all([axios.get('https://thingproxy.freeboard.io/fetch/https://api.coingecko.com/api/v3/search/trending'),axios.get(`https://thingproxy.freeboard.io/fetch/https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd`)])
     
     const btcPrice = btcRes.data.bitcoin.usd
     
