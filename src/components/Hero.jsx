@@ -13,7 +13,7 @@ function Hero() {
 
     const fetchData = async()=>{
       try{
-      const response = await axios.get('https://cors-anywhere.herokuapp.com/https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=4&page=1&sparkline=false&locale=en')
+      const response = await axios.get('https://thingproxy.freeboard.io/fetch/https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=4&page=1&sparkline=false&locale=en')
     const finalData = response.data    
     setHerodata(finalData)
     
